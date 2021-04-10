@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1 #{title}
+    ul.list-group
+        each a, i in arti
+            li.list-group-item
+                a(href="/articles/"+a._id)=a.title    
